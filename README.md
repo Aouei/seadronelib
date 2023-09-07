@@ -84,12 +84,20 @@ If you want to uninstall micasense and seadrone
 ## Technical Description
 
 The code is mainly composed of 4 files:
-- camera.py: contains the code necessary to process different sensors such as DJI or MicaSense.
-- raster.py: contains the code related to georeference, mosaicking, etc...
-- water_quality.py: contains the code needed to obtain water quality products such as chlorophyll, turbidity, etc...
-- remote_sensing.py: contains the code needed to extract and process remote sensing reflectance.
+- raster.py: 
+  - contains the code related to georeference, mosaicking, etc...
+- water_quality.py: 
+  - contains the code needed to obtain water quality products such as chlorophyll, turbidity, etc...
+- remote_sensing.py: 
+  - contains the code needed to extract and process remote sensing reflectance.
+- data_structures.py: 
+  - contains classes for gathering useful data needed in the processing.
+- enums.py: 
+  - contains enums to summarize some useful data like sensors available, etc...
+- processing.py: 
+  - contains the code to process a single flight in a simpler and user friendly manner.
 
-<img src="/captures/Class_diagram.png" alt="Class Diagram" title="Class Diagram">
+<img src="/captures/Class_diagram.jpg" alt="Class Diagram" title="Class Diagram">
 
 Each file (folder symbol) contains a set of classes (rectangles) with methods to solve the needs we have such as extract rrs, georeference, etc...
 
